@@ -2,8 +2,8 @@
   <nav>
     <h1 class ="title">Hello  <span>World</span></h1>
     <ul>
-      <li>Feed</li>
-      <li>About</li>
+      <li @click="navigate('/')">Feed</li>
+      <li @click="navigate('/about')">About</li>
     </ul>
   </nav>
 </template>
@@ -19,5 +19,32 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss">
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 60px;
+    background-color: #171717;
+    padding: 0px 15px;
+    box-sizing: border-box;
+
+      .title {
+        color: #FFCE00;
+        font-size:18px;
+        line-height: 60px;
+        margin: 0;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        span {
+          color: #F3F3F3;
+          font-weight:300;
+        }
+      }
+  }
 </style>
