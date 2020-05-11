@@ -17,10 +17,13 @@ function createWindow () {
   /**
    * Initial window options
    */
+
+   //cross origin errror? in the web brwser?
+   //add  "webPreferences:{webSecurity: false}"
   mainWindow = new BrowserWindow({
-    height: 563,
-    useContentSize: true,
-    width: 1000
+    width: 480,
+    height: 768,
+    useContentSize: true
   })
 
   mainWindow.loadURL(winURL)
