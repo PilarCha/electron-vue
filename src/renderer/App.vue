@@ -16,5 +16,10 @@
 </script>
 
 <style>
-  /* CSS */
+  body {
+    margin: 60px 0 0 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    background-color: #F3F3F3;
+  }
 </style>

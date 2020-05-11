@@ -35,7 +35,7 @@ export default {
 
       .title {
         color: #FFCE00;
-        font-size:18px;
+        font-size:28px;
         line-height: 60px;
         margin: 0;
         font-weight: 900;
@@ -44,6 +44,23 @@ export default {
         span {
           color: #F3F3F3;
           font-weight:300;
+        }
+      }
+
+      ul {
+        li {
+          color:#F3F3F3;
+          font-size:18px;
+          line-height:60px;
+          display:inline-block;
+          list-style: none;
+          padding: 0px 15px;
+          cursor: pointer;
+
+          &:hover {
+            color: #FFCE00;
+            background-color: rgba(255,255,255,0.2);
+          }
         }
       }
   }
