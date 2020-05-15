@@ -4,10 +4,10 @@
     <div class="breeds">
       <div class="breed" v-for='breed in breeds' :key='breed.id'>
         <div class="breed-content">
-          <p><strong>Name:</strong> {{ breed.name }}</p> <br>
-          <p v-if="breed.origin"><strong>Origin:</strong> {{ breed.origin }}</p> <br>
-          <p v-if="breed.life_span"><strong>Life Span:</strong> {{ breed.life_span }}</p> <br>
-          <p v-if="breed.breed_group"><strong>Breed Group:</strong> {{ breed.breed_group }}</p> <br>
+          <p><strong>Name:</strong> {{ breed.name }}</p>
+          <p v-if="breed.origin"><strong>Origin:</strong> {{ breed.origin }}</p>
+          <p v-if="breed.life_span"><strong>Life Span:</strong> {{ breed.life_span }}</p>
+          <p v-if="breed.breed_group"><strong>Breed Group:</strong> {{ breed.breed_group }}</p>
         </div>
       </div>
     </div>
@@ -49,11 +49,15 @@
     margin: 15px 0px;
 
     @media screen and (max-width:600px){
-      grid-template-columns: repeat(1,1ft);
+      grid-template-columns: repeat(1,1fr);
     }
     .breed {
       background-color:#FFF;
       box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+      padding:50px;
+      &:hover {
+        box-shadow: 0px 3px 8px 6px rgba(235,200,5,0.5)
+      }
     }
   }
 </style>
